@@ -1,42 +1,162 @@
+* {box-sizing: border-box; font-family: 'JUSTSans-400'}
+@font-face {
+  font-family: 'JUST Sans';
+  src: url('/fonts/JUST Sans ExLight.woff2') format('woff2'),
+       url('/fonts/JUST Sans ExLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JUSTSans300';
+  src: url('/fonts/JUST Sans Light.woff2') format('woff2'),
+       url('/fonts/JUST Sans Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JUSTSans-400';
+  src: url('/fonts/JUST Sans Regular.woff2') format('woff2'),
+       url('/fonts/JUST Sans Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JUST Sans';
+  src: url('/fonts/JUST Sans Medium.woff2') format('woff2'),
+       url('/fonts/JUST Sans Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JUST Sans';
+  src: url('/fonts/JUST Sans SemiBold.woff2') format('woff2'),
+       url('/fonts/JUST Sans SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JUST Sans';
+  src: url('/fonts/JUST Sans Bold.woff2') format('woff2'),
+       url('/fonts/JUST Sans Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JUSTSans800';
+  src: url('/fonts/JUST Sans ExBold.woff2') format('woff2'),
+       url('/fonts/JUST Sans ExBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sink';
+  src: url('/fonts/Sink.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TGSPerfectCondensed';
+  src: url('/fonts/TGSPerfectCondensed.woff2') format('woff2'),
+       url('/fonts/TGSPerfectCondensed.woff') format('woff'),
+       url('/fonts/TGSPerfectCondensed.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {max-width: 100vw; overflow-x: hidden;}
+body {width: 100%; margin: 0px}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --light-blue: #B2D0E8;
+    --light-yellow: #FDFCDC;
+    --green: #689689;
+    --paynesgray: rgba(159, 166, 188, 0.75);
+    --periwinkle: #C6D8FF;
+    --tgs-condensed: 'TGSPerfectCondensed', sans-serif;
+    --sink: 'Sink', sans-serif;
+    --just-sans-300: 'JUSTSans-300', sans-serif;
+    --just-sans-500: 'JUSTSans-500', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.flex-center-center {display: flex; align-items: center; justify-content: center; flex:1}
+.flex-center-end {display: flex; align-items: center; justify-content: flex-end; flex:1}
+.flex-center-start {display: flex; align-items: center; justify-content: flex-start; flex:1}
+.flex-center-spacebetween {display: flex; align-items: center; justify-content: space-between; flex:1}
+.flex-center-spaceevenly {display: flex; align-items: center; justify-content: space-evenly; flex:1}
+
+.flex-start-center {display: flex; align-items: flex-start; justify-content: center; flex:1}
+.flex-start-start {display: flex; align-items: flex-start; justify-content: flex-start; flex:1;}
+.flex-start-end {display: flex; align-items: flex-start; justify-content: flex-end; flex:1;}
+.flex-start-spacebetween {display: flex; align-items: flex-start; justify-content: space-between; flex:1;}
+.flex-start-spaceevenly {display: flex; align-items: flex-start; justify-content: space-evenly; flex:1;}
+
+.flex-end-center {display: flex; align-items: flex-end; justify-content: center; flex:1;}
+.flex-end-start {display: flex; align-items: flex-end; justify-content: flex-start; flex:1;}
+.flex-end-end {display: flex; align-items: flex-end; justify-content: flex-end; flex:1;}
+.flex-end-spacebetween {display: flex; align-items: flex-end; justify-content: space-between; flex:1;}
+.flex-end-spaceevenly {display: flex; align-items: flex-end; justify-content: space-evenly; flex:1;}
+
+
+.flex-column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap}
+.no-flex-grow {flex: unset;}
+
+.hidden-scrollbar {scrollbar-width: none; /* Firefox */ -ms-overflow-style: none; /* Internet Explorer 10+ */}
+.hidden-scrollbar::-webkit-scrollbar {display: none; /* Chrome, Safari, and Edge */}
+
+
+nav {padding: 0 25px; margin: 15px 0; color: white; position: fixed; top: 0; left: 0; width: 100vw; background-color: var(--paynesgray); }
+.nav-links a {margin: 0 10px;}
+.nav-links button {padding: 5px 20px; font-size: 18px;}
+
+h1 {
+  font-size: 72px;
+  font-family: var(--sink);
+  text-transform: uppercase;
+
+}
+h2 {font-size: 48px; font-family: var(--sink); text-transform: uppercase;}
+
+h3 {font-size: 32px; font-family: var(--just-sans-300); font-weight: 200!important;}
+h4 {font-size: 22px; font-family: var(--just-sans-500); font-weight: 500!important;}
+p {margin: 5px 0; padding: 0;}
+strong {font-size: inherit; line-height: inherit}
+button {padding: 10px 25px; font-size: 22px;}
+
+.hover:hover {cursor: pointer; transform: scale(1.05);}
+.hover {cursor: pointer;}
+.box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.5);}
+.text-shadow {text-shadow: 2px 2px 2px rgba(0,0,0,0.15);}
+
+.active-link {text-decoration: underline;}
+
+#designElixirCredits {text-decoration: none; font-size: 12px; color: black;}
+
+/* @media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
   }
-}
+} */
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+.fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+.hero {width: 100%; height: 90vh; background-image: url('/treasure.jpg'); background-position: center center; background-size: cover; }
+.hero-overlay { height: 100%; width: 100%;}
+.centered-text {text-align: center;}
+.white-text {color: white;}
+.basic-padding {padding: 25px;}
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+.service {aspect-ratio: 1; max-width: 25vw; height: 25vw; border: 1px solid teal; padding: 10px; margin: 2.5vw;}
+input {padding: 10px; max-width: 600px; width: 100%;}
+textarea {padding: 10px; width: 600px; width: 100%;}
+label {margin-bottom: 10px;}
