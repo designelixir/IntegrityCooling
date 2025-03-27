@@ -53,15 +53,23 @@ export default function ServicesGrid() {
       description: "Keep your system running at peak performance with the latest technology and energy-saving upgrades.",
     },
   ];
-
   return (
-    <div className="flex-center-center flex-wrap">
-      {services.map((service, index) => (
-        <div key={index} className="service flex-center-center flex-column no-flex-grow">
-          <h4 className="centered-text">{service.title}</h4>
-          <p className="centered-text">{service.description}</p>
+    <div>
+        <div className="half-hero flex-end-start">
+            <h1 className="white-text" style={{padding: '0', margin: '0'}}>Services</h1>
         </div>
-      ))}
+        <div className="flex-center-center flex-wrap">
+          {services.map((service, index) => (
+            <div key={index} className="service flex-center-center flex-column no-flex-grow gsap-objects">
+              <h4 className="centered-text">{service.title}</h4>
+              <p className="centered-text">{service.description}</p>
+            </div>
+          ))}
+        </div>
     </div>
+    
+    
   );
 }
+
+

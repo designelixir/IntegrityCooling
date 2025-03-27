@@ -24,43 +24,54 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form flex-start-start flex-column">
-      <label className="flex-start-start flex-column">
-        Name:
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-      </label>
+    <section className="flex-center-center basic-padding" style={{backgroundColor: 'rgba(171, 177, 193, 0.15)', padding: '100px 0'}} >
 
-      <label className="flex-start-start flex-column">
-        Email:
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </label>
+      <div className="contact-image">
+        
+      </div>
+      <div className="contact-form-wrapper">
+      <h2 className="" style={{margin: '0', padding: '0'}}>Contact Us</h2>
+      <p className="" style={{marginBottom: '25px'}}>Fill out the form below with any questions, comments or inquiries. You can also Book a Consultation to get a quote, do x y z, etc. </p>
+        <form onSubmit={handleSubmit} className="contact-form flex-start-start flex-column">
+          <label className="flex-start-start flex-column">
+            Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </label>
 
-      <label className="flex-start-start flex-column">
-        Message:
-        <textarea
-          name="message"
-          rows={4}
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-      </label>
+          <label className="flex-start-start flex-column">
+            Email:
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
 
-      <button type="submit">Send</button>
+          <label className="flex-start-start flex-column">
+            Message:
+            <textarea
+              name="message"
+              rows={4}
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </label>
 
-      {submitted && <p className="success-msg">Thank you! Your message has been sent.</p>}
-    </form>
+          <button type="submit" style={{width: '100%', background: 'var(--navy)'}} className="white-text">Send</button>
+
+          {submitted && <p className="success-msg">Thank you! Your message has been sent.</p>}
+        </form>
+      </div>
+    
+    </section>
   );
 }
