@@ -66,7 +66,7 @@ export default function ContactForm() {
             />
           </label>
 
-          <button type="submit" style={{width: '100%', background: 'var(--navy)'}} className="white-text">Send</button>
+          <button type="submit" style={{width: '100%'}} className="white-text button-1">Send</button>
 
           {submitted && <p className="success-msg">Thank you! Your message has been sent.</p>}
         </form>

@@ -1,0 +1,121 @@
+@import url("https://use.typekit.net/adt6kwm.css");
+:root {
+    --behind-nineties-reg: "Behind-The-Nineties-Rg", sans-serif;
+    --behind-nineties-reg-italic: "Behind-The-Nineties-It", sans-serif;
+    --behind-nineties-md: "Behind-The-Nineties-Md", sans-serif;
+    --behind-nineties-md-italic: "Behind-The-Nineties-Md-It", sans-serif;
+    --behind-nineties-smbd: "Behind-The-Nineties-Smbd", sans-serif;
+    --behind-nineties-smbd-italic: "Behind-The-Nineties-Smbd-It", sans-serif;
+    --just-sans-bold: "JUST Sans Bold", sans-serif;
+    --just-sans-exbold: "JUST Sans ExBold", sans-serif;
+    --just-sans-exlight: "JUST Sans ExLight", sans-serif;
+    --just-sans-light: "JUST Sans Light", sans-serif;
+    --just-sans-medium: "JUST Sans Medium", sans-serif;
+    --just-sans-regular: "JUST Sans Regular", sans-serif;
+    --just-sans-semibold: "JUST Sans SemiBold", sans-serif;
+  }
+  
+  @font-face {
+    font-family: "Behind-The-Nineties-Rg";
+    src: url("/fonts/Behind-The-Nineties-Rg.woff2") format("woff2"),
+         url("/fonts/Behind-The-Nineties-Rg.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Behind-The-Nineties-It";
+    src: url("/fonts/Behind-The-Nineties-It.woff2") format("woff2"),
+         url("/fonts/Behind-The-Nineties-It.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Behind-The-Nineties-Md";
+    src: url("/fonts/Behind-The-Nineties-Md.woff2") format("woff2"),
+         url("/fonts/Behind-The-Nineties-Md.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Behind-The-Nineties-Md-It";
+    src: url("/fonts/Behind-The-Nineties-Md-It.woff2") format("woff2"),
+         url("/fonts/Behind-The-Nineties-Md-It.woff") format("woff");
+    font-weight: medium;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Behind-The-Nineties-Smbd";
+    src: url("/fonts/Behind-The-Nineties-Smbd.woff2") format("woff2"),
+         url("/fonts/Behind-The-Nineties-Smbd.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Behind-The-Nineties-Smbd-It";
+    src: url("/fonts/Behind-The-Nineties-Smbd-It.woff2") format("woff2"),
+         url("/fonts/Behind-The-Nineties-Smbd-It.woff") format("woff");
+    font-weight: semibold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "JUST Sans Bold";
+    src: url("/fonts/JUST Sans Bold.woff2") format("woff2"),
+         url("/fonts/JUST Sans Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "JUST Sans ExBold";
+    src: url("/fonts/JUST Sans ExBold.woff2") format("woff2"),
+         url("/fonts/JUST Sans ExBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "JUST Sans ExLight";
+    src: url("/fonts/JUST Sans ExLight.woff2") format("woff2"),
+         url("/fonts/JUST Sans ExLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "JUST Sans Light";
+    src: url("/fonts/JUST Sans Light.woff2") format("woff2"),
+         url("/fonts/JUST Sans Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "JUST Sans Medium";
+    src: url("/fonts/JUST Sans Medium.woff2") format("woff2"),
+         url("/fonts/JUST Sans Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "JUST Sans Regular";
+    src: url("/fonts/JUST Sans Regular.woff2") format("woff2"),
+         url("/fonts/JUST Sans Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "JUST Sans SemiBold";
+    src: url("/fonts/JUST Sans SemiBold.woff2") format("woff2"),
+         url("/fonts/JUST Sans SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+

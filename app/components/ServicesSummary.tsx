@@ -9,7 +9,7 @@ export default function ServicesSummary(){
           <div className="card gsap-objects"  style={{background: '#2578BB'}}>
             <div className="card-overlay">
               <h3 className="centered-text ">Installation &amp; Repairs</h3>
-              <ul>
+              <ul className="flex-center-center flex-column">
                 <li>Routine HVAC Maintenance</li>
                 <li>Air Conditioning Installation &amp; Replacement</li>
                 <li>Custom HVAC System Design</li>
@@ -20,7 +20,7 @@ export default function ServicesSummary(){
           <div className="card gsap-objects" style={{background: '#2578BB'}}>
             <div className="card-overlay">
               <h3 className="centered-text ">Upgrades &amp; Efficiency </h3>
-              <ul>
+              <ul className="flex-center-center flex-column">
                 <li>Indoor Air Quality Solutions</li>
                 <li>Smart Thermostat Installation</li>
                 
@@ -32,8 +32,8 @@ export default function ServicesSummary(){
           </div>
           <div className="card gsap-objects"  style={{background: '#2578BB'}}>
             <div className="card-overlay">
-              <h3 className="centered-text ">Routine Services / Maintenance</h3>
-              <ul>
+              <h3 className="centered-text ">Routine Services &amp; Maintenance</h3>
+              <ul className="flex-center-center flex-column">
                 <li>Duct Cleaning &amp; Sealing</li>
                 <li>Refridgeration Services</li>
                 <li>Air Quality Testing & Monitoring</li>
@@ -45,7 +45,7 @@ export default function ServicesSummary(){
         </div>
         <div className="flex-center-center">
           <Link href="/services">
-          <button>View All Services</button>
+          <button className="button-2">View All Services</button>
           </Link>
         </div>
       </section>

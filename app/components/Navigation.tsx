@@ -23,7 +23,7 @@ export default function Navigation() {
 
       if (scrollY > 25 && isAtTopRef.current) {
         gsap.to(nav, {
-          background: 'var(--navy)', 
+          background: 'var(--color1)', 
           backdropFilter: 'blur(0)'
         })
         gsap.to(logo, {
@@ -36,7 +36,7 @@ export default function Navigation() {
       } else if (scrollY <= 25 && !isAtTopRef.current) {
         gsap.to(nav, {
           background: 'unset', 
-          backdropFilter: 'blur(5px)'
+          backdropFilter: 'blur(1px)'
         })
         gsap.to(logo, {
           height: 90,
@@ -96,6 +96,7 @@ export default function Navigation() {
               className="menu-icon"
             />
           </button>
+          <button className='button-1 xs-button'>Book Appointment</button>
         </div>
       </div>
 
@@ -104,7 +105,7 @@ export default function Navigation() {
           <Link className="nav-link" href="#AboutSection">About Us</Link>
           <Link className="nav-link" href="/services">Services</Link>
           <Link className="nav-link" href="/contact">Contact</Link>
-          <Link className="nav-link book-consultation-button" href="/">Book a Consultation</Link>
+          
         </div>
       </div>
     </nav>

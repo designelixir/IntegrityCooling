@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./fonts.css";
 import Navigation from "./components/Navigation";
 import ClientLayoutWrapper from "./components/ClientLayoutWrapper"; // create this if not already
 import Footer from "./components/Footer";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Integrity Cooling | Homepage",
@@ -17,9 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="stylesheet" href="https://use.typekit.net/adt6kwm.css" />
-      </Head>
       <body>
         <Navigation />
         <ClientLayoutWrapper>
