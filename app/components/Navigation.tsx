@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
+import BookButton from './BookButton';
 
 export default function Navigation() {
   const navRef = useRef<HTMLDivElement | null>(null);
@@ -96,15 +97,15 @@ export default function Navigation() {
               className="menu-icon"
             />
           </button>
-          <button className='button-1 xs-button'>Book Appointment</button>
+          <BookButton></BookButton>
         </div>
       </div>
 
       <div className="mobile-menu flex-center-center" ref={menuRef}>
         <div className="flex-center-center flex-wrap mobile-menu-links">
           <Link className="nav-link" href="#AboutSection">About Us</Link>
-          <Link className="nav-link" href="/services">Services</Link>
-          <Link className="nav-link" href="/contact">Contact</Link>
+          <Link className="nav-link" href="#ServicesSection">Services</Link>
+          <Link className="nav-link" href="#ContactSection">Contact</Link>
           
         </div>
       </div>

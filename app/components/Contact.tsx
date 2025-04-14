@@ -24,14 +24,12 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="flex-center-center basic-padding" style={{backgroundColor: 'rgba(171, 177, 193, 0.15)', padding: '100px 0'}} >
+    <section className="flex-center-center basic-padding contact-image" id="ContactSection" style={{ padding: '100px 0'}} >
 
-      <div className="contact-image">
-        
-      </div>
+      
       <div className="contact-form-wrapper">
       <h2 className="" style={{margin: '0', padding: '0'}}>Contact Us</h2>
-      <p className="" style={{marginBottom: '25px'}}>Fill out the form below with any questions, comments or inquiries. You can also Book a Consultation to get a quote, do x y z, etc. </p>
+      <p className="" style={{marginBottom: '25px'}}>Fill out the form below with any questions, comments or inquiries. </p>
         <form onSubmit={handleSubmit} className="contact-form flex-start-start flex-column">
           <label className="flex-start-start flex-column">
             Name:

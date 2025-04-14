@@ -1,6 +1,6 @@
 export default function UXPage(){
     return (
-        <section>
+        <section style={{marginTop: '200px'}}>
             <div className="flex-center-spacebetween">
                 <div>
                     <h1>User <i>Interface</i> <strong>Page <i>Design</i></strong></h1>

@@ -1,13 +1,18 @@
+'use client'
+import BookButton from "./BookButton";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero(){
     return(
-        <div className="hero-container flex-end-start ">
-            <div className="hero-content-wrapper flex-center-center flex-column no-flex-grow" >
-                <h1 className="centered-text white-text text-shadow fade-in" style={{maxWidth: '800px'}}>Your Comfort, <span style={{color: 'var(--navy)'}}>Our Integrity</span> </h1>
-                <button className='button-1' style={{marginBottom: '25px'}}>Book a Consultation</button>
-                
+        <section className="flex-center-start flex-column hero-container fade-in">
+            <div className="hero-wrapper hero-background-image flex-center-end flex-column">
+                <h1 className="centered-text white-text text-shadow fade-in">Your Comfort, <br className="hero-break"></br> Our Integrity </h1>
+                <BookButton></BookButton>
             </div>
-            
-        </div>
+            <Link href="#AboutSection" className="flex-center-center no-flex-grow bouncing-arrow fade-in">
+                <Image src="/arrow.svg"  height={10} width={20} className="bounce-top" style={{marginTop: '10px'}} alt="bouncing arrow"></Image>
+            </Link>
+        </section>
     )
 }

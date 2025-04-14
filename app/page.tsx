@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <Hero></Hero>
-    
+    <div className="spacer" id="AboutSection"></div>
     <About></About>
     <ServicesSummary></ServicesSummary>
     
