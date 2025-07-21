@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import BookButton from "./BookButton"
 
 export default function About(){
