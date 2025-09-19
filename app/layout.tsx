@@ -4,6 +4,7 @@ import "./fonts.css";
 import Navigation from "./components/Navigation";
 import ClientLayoutWrapper from "./components/ClientLayoutWrapper"; // create this if not already
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Integrity Cooling | Homepage",
@@ -20,6 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="8y2cwrZ/W6eayQEOBqUosw"
+          async
+        />
       <body>
         <Navigation />
         <ClientLayoutWrapper>
