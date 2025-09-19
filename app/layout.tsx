@@ -7,7 +7,10 @@ import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Integrity Cooling | Homepage",
-  description: "",
+  description: "Delivering trusted HVAC solutions on the Treasure Coast — “Your Comfort, Our Integrity.” Reliable service for your home or business with excellence and care.",
+  verification: {
+    google: "nHmzA21aOfWdwuc2zE4sSbamXcglxB9PX1451xL_ckE",
+  },
 };
 
 export default function RootLayout({

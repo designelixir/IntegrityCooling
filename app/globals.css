@@ -1,26 +1,26 @@
-* {box-sizing: border-box; font-family: var(--body-font);}
+* {box-sizing: border-box; font-family: var(--body-font); transition: all 0.3s ease;}
+:root {
 
+  --color1: #474389;
+  --color2: #B2D0E8;
+  --color3: #deebf5;
+  --color4: rgba(171, 177, 193, 0.15);
 
+}
 
 html { scroll-behavior: smooth; max-width: 100vw; overflow-x: hidden;}
 body {width: 100%; margin: 0px;  }
 
-/* fonts */
 h1, h2, h3, h4, h5, h6, p, a, i, span, strong {margin: 0;}
-
 h1 {font-size: 56px; font-family: var(--aldine-regular); font-weight: 400; padding: 10px 0; }
-
-
 h2 {font-size: 42px; font-family: var(--aldine-regular); }
 h2 i {font-family: var(--aldine-regular); font-weight: 400; }
 h2 strong {font-family: var(--aldine-regular); font-weight: 600;}
 h2 strong i {font-family: var(--aldine-regular); font-style: italic; }
-
 h3 {font-size: 28px; font-weight: 400; font-family: var(--aldine-regular); line-height: 36px; }
 h3 i {font-family: var(--aldine-regular);}
 h3 strong {font-family: var(--aldine-regular);}
 h3 strong i {font-family: var(--aldine-regular); }
-
 h4 {font-size: 24px; line-height: 28px; font-family: var(--aldine-regular); color: var(--color1); text-transform: uppercase;}
 
 p {font-family: var(--just-sans-light); font-size: 18px; line-height: 24px;}
@@ -37,23 +37,6 @@ span {font-family: inherit}
 ul {margin: 0; padding: 0;}
 li {font-family: var(--just-sans-semibold)}
 
-
-@media screen and (max-width: 480px) {
-  h1 {font-size: 48px; line-height: 58px;}
-}
-
-.card-overlay li {margin: 2px 0;}
-
-
-:root {
-
-  --color1: #474389;
-  --color2: #B2D0E8;
-  --color3: #deebf5;
-  --color4: rgba(171, 177, 193, 0.15);
-
-}
-
 .color1-text {color: var(--color1)}
 .color2-text {color: var(--color2)}
 .color3-text {color: var(--color3)}
@@ -61,6 +44,11 @@ li {font-family: var(--just-sans-semibold)}
 .black-text {color: black;}
 .centered-text {text-align: center;}
 
+@media screen and (max-width: 480px) {
+  h1 {font-size: 48px; line-height: 58px;}
+}
+
+.card-overlay li {margin: 2px 0;}
 
 
 .flex-center-center {display: flex; align-items: center; justify-content: center; flex:1}
@@ -90,6 +78,10 @@ li {font-family: var(--just-sans-semibold)}
 .basic-padding-top-bottom {padding: 25px 0;}
 .basic-padding-top {padding-top: 25px;}
 
+@media screen and (max-width: 750px) {
+  .basic-padding {padding: 15px;}
+}
+
 .margin-top-10 {margin-top: 10px;}
 .margin-bottom-10 {margin-bottom: 10px;}
 .margin-left-10 {margin-left: 10px;}
@@ -98,9 +90,8 @@ li {font-family: var(--just-sans-semibold)}
 .hidden-scrollbar {scrollbar-width: none;  -ms-overflow-style: none; }
 .hidden-scrollbar::-webkit-scrollbar {display: none;}
 
-button {font-family: var(--just-sans-semibold); padding: 10px 15px; font-size: 18px; border: unset; border-radius: 5px; background: unset; color: inherit; text-transform: uppercase;}
-button:hover {cursor: pointer; font-size: 19px; box-shadow: 0.5px 0.5px 3px inherit;}
-
+button {font-family: var(--just-sans-semibold); padding: 10px 15px; font-size: 18px; border: unset; border-radius: 5px; background: unset; color: inherit; text-transform: uppercase; transition: all 0.3s ease;}
+button:hover {cursor: pointer; transform: scale(1.05); box-shadow: 0.5px 0.5px 3px inherit;}
 
 .button-1 {background: var(--color1); color: white; border: 2px solid var(--color1); padding: 8px 15px;}
 .button-2 {border: 2px solid var(--color1); box-shadow: 0.5px 0.5px 1px var(--color1); color: var(--color1);}
@@ -115,7 +106,6 @@ nav.nav-bar { z-index: 3; position: fixed; top: 0; left: 0; width: 100vw; max-wi
 .nav-bar-inner {padding: 10px 25px; color: white; width: 100%; backdrop-filter: blur(1px); transition: all 1s smooth;}
 
 
-
 .mobile-menu {background: var(--color3); display: none; width: 100%; padding: 10px; overflow: hidden; height: 0; opacity: 0; transform: translateY(-20px)}
 .mobile-menu .nav-link {font-size: 16px!important; color: black; text-align: center; text-transform: unset;}
 .mobile-menu-button {background: unset;}
@@ -124,8 +114,8 @@ nav.nav-bar { z-index: 3; position: fixed; top: 0; left: 0; width: 100vw; max-wi
 
 @media screen and (max-width: 750px) {
   .mobile-menu {display: block;} 
+  .book-button-wrapper {display: none}
 }
-
 
 .logo {transition: all 0.3s ease;} 
 
@@ -163,7 +153,6 @@ label {margin-bottom: 10px; width: 100%; font-size: 16px; font-family: var(--ald
   .hero-break {display: block;}
 }
 
-
 .spacer {height: 100px;}
 
 
@@ -200,3 +189,10 @@ footer {background: var(--color1);}
   .footer-contact {align-items: center; justify-content: center;}
 }
 
+/* About */
+.bio-card {background: #f4f2f2; border-radius: 5px; margin: 25px; min-width: 350px;}
+.bio-title {font-family: var(--just-sans-semibold); font-weight: 200; }
+.bio-subtitle {font-size: 16px; opacity: 0.75; line-height: 20px; margin: 5px 0 10px; font-family: var(--just-sans-semibold); text-transform: unset;}
+@media screen and (max-width: 900px) {
+  .bio-wrapper {flex-direction: column;}
+}

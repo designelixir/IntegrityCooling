@@ -1,4 +1,5 @@
 
+import BookButton from "./BookButton"
 
 export default function ServicesSummary(){
     return(
@@ -47,11 +48,10 @@ export default function ServicesSummary(){
           </div>
         
         </div>
-        {/* <div className="flex-center-center">
-          <Link href="/services">
-          <button className="button-2">View All Services</button>
-          </Link>
-        </div> */}
+        <div className="flex-center-center no-flex-grow gsap-objects" style={{margin: '25px 50px'}}>
+                <BookButton></BookButton>
+
+            </div>
       </section>
     )
 }

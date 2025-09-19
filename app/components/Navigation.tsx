@@ -97,7 +97,9 @@ export default function Navigation() {
               className="menu-icon"
             />
           </button>
-          <BookButton></BookButton>
+          <div className="book-button-wrapper">
+            <BookButton></BookButton>
+          </div>
         </div>
       </div>
 
